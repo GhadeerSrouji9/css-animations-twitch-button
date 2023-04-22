@@ -1,0 +1,33 @@
+.container {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+
+}
+
+.btn {
+    display: block;
+    width: 150px;
+    height: 55px;
+    margin: 50px auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    font-size: 1.2em;
+}
+
+.twitch{
+  animation-name: twitch;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes twitch {
+  1% { transform: rotate(10deg); background-color: red}
+  3% { transform: rotate(-10deg) ; background-color: #8080ff}
+  5% { transform: rotate(10deg) ; background-color: red}
+  7% { transform: rotate(-10deg) color: greenyellow}
+  9% { transform: rotate(10deg)}
+  11% { transform: rotate(-10deg)}
+  13% { transform: rotate(0deg)}
+  100% { transform: rotate(0deg)}
+}
